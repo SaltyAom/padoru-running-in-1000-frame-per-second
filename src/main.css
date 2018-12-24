@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+
+body {
+    margin:0;
+    height:100vh;
+    background-color: #313131;
+    position:fixed;
+}
+
+#hall, #outside {
+    position:fixed;
+    width:100%;
+    height:100vh;
+    z-index: -100;
+    background-image: url("/img/hall.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#outside {
+    z-index:100;
+    background-image: url("/img/outside.jpg");
+}
+
+#frame {
+    position:fixed;
+    top: 0;
+    left:0;
+    width:20%;
+}
+
+@media screen and (orientation: portrait){
+    #hall, #outside {
+        background-size: contain !important;
+        background-position: top !important;
+    }
+}
