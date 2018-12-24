@@ -1,6 +1,5 @@
 # Padoru running in 1,000 frames per second
-### Merry Christmas
-[a demo](https://www.github.com/aomkirby123/padoru/public/frame/padoru0.png)
+[a Merry Christmas](https://www.github.com/aomkirby123/padoru/public/frame/padoru0.png)
 
 ## Detail
 After watching Padoru Padoru 10 hours version [a Padoru Padoru 10 hours version](https://youtu.be/PzrGGyPMfoo), 
