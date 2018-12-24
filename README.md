@@ -10,13 +10,19 @@ If you're reading this, sent help.
 
 ## Usage
 > git clone https://github.com/aomkirby123/padru-running-in-1000-frame-per-second
+
 > npm install
+
 or
+
 > yarn install
+
 (Yarn 1.12 is faster than npm :lenny:)
 
 > npm install
+
 or
+
 > yarn start
 
 Everything for static file is in build
