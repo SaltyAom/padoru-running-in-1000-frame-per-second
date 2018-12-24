@@ -1,9 +1,9 @@
 # Padoru running in 1,000 frames per second
 ### Merry Christmas
-Demo: [a link](https://www.github.com/aomkirby123/padoru/public/frame/padoru0.png)
+[a demo](https://www.github.com/aomkirby123/padoru/public/frame/padoru0.png)
 
 ## Detail
-After watching Padoru Padoru 10 hours version [a link](https://youtu.be/PzrGGyPMfoo), 
+After watching Padoru Padoru 10 hours version [a Padoru Padoru 10 hours version](https://youtu.be/PzrGGyPMfoo), 
 I feels like Padoru's movements are too slow, and I'm very sleepy but can't sleep and I don't know what to do, so I did this.
 
 I don't even know when I was starting doing. I don't even know why I'm doing this. （Φ ω Φ）
