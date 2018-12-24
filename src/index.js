@@ -4,11 +4,11 @@ import ReactDOM from "react-dom"
 import "./main.css"
 
 let frame = [
-    "/frame/padoru0.png",
-    "/frame/padoru1.png",
-    "/frame/padoru2.png",
-    "/frame/padoru3.png",
-    "/frame/padoru0.png" // Fallback
+    "frame/padoru0.png",
+    "frame/padoru1.png",
+    "frame/padoru2.png",
+    "frame/padoru3.png",
+    "frame/padoru0.png" // Fallback
 ]
 
 class Root extends Component {
@@ -217,7 +217,11 @@ class Root extends Component {
                 </Fragment>
             )
         } else {
-            return null;
+            return (
+                <div id="loading">
+                    Loading
+                </div>
+            )
         }
     }
 }
