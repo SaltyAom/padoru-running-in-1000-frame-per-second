@@ -1,0 +1,2 @@
+*{box-sizing:border-box}body{margin:0;background-color:#313131}#hall,#outside,body{height:100vh;position:fixed}#hall,#outside{width:100%;z-index:-100;background-image:url(/img/hall.jpg);background-size:cover;background-repeat:no-repeat;background-position:50%}#outside{z-index:100;background-image:url(/img/outside.jpg)}#frame{position:fixed;top:0;left:0;width:20%}@media screen and (orientation:portrait){#hall,#outside{background-size:contain!important;background-position:top!important}}
+/*# sourceMappingURL=main.c788f23a.chunk.css.map */
