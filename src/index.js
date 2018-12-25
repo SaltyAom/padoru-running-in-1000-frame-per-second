@@ -80,8 +80,9 @@ class Root extends Component {
 
         let timerInterval = setInterval(() => {
             this.setState({
-                time: this.state.time + 0.1
+                timer: this.state.time + 0.1
             })
+            window.timer = this.state.timer;
         },100)
 
         document.getElementById("audio").currentTime = 0

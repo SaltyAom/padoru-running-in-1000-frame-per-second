@@ -32,9 +32,15 @@
     <meta name="twitter:image" content="https://raw.githubusercontent.com/aomkirby123/padoru-running-in-1000-frame-per-second/master/public/frame/padoru0.png">
     <meta name="twitter:creator" content="@aomkirby1231">
   </head>
+  <script>
+  function audioPlay(){
+    document.getElementById('audio').play();
+    document.getElementById('audio').currentTime = window.timer;
+  }
+  </script>
   <body>
     <noscript>Padoru need JavaScript to be running in 1,000 frames per second.</noscript>
-    <div id="root"></div>
+    <div id="root" onClick="audioPlay()"></div>
     <div id="message">If audio doesn't play, please tap on screen.</div>
     <audio id="audio" src="media/MerryChristmas.mp3" type="audio/mpeg" loop></audio>
   </body>
