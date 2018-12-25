@@ -22,7 +22,8 @@ class Root extends Component {
             unit: undefined,
             extraSpeed: 0,
             outside: 1,
-            outsideY: 0
+            outsideY: 0,
+            timer: 0
         }
     }
 
@@ -73,8 +74,15 @@ class Root extends Component {
             initTop: 30,
             extraSpeed: 0,
             outside: 1,
-            outsideY: 0
+            outsideY: 0,
+            timer: 0
         })
+
+        let timerInterval = setInterval(() => {
+            this.setState({
+                time: this.state.time + 0.1
+            })
+        },100)
 
         document.getElementById("audio").currentTime = 0
 
@@ -140,6 +148,7 @@ class Root extends Component {
                 jump++;
                 if(jump >= 6){
                     clearInterval(jumpInterval);
+                    clearInterval(timerInterval);
                     return;
                 }
             },340);
@@ -148,6 +157,7 @@ class Root extends Component {
 
     playAudio(){
         document.getElementById('audio').play();
+        document.getElementById('audio').currentTime = this.state.timer;
     }
 
     goRight(){
@@ -215,6 +225,7 @@ class Root extends Component {
                         style={{opacity: this.state.outside, backgroundPositionY: `${this.state.outsideY}vh`}}
                         onClick={() => this.playAudio()}
                     ></div>
+                    <div id="overlay" onClick={() => this.playAudio}></div>
                     <div id="hall" onClick={() => this.playAudio()}></div>
                     <img 
                         id="frame" src={frame[this.state.sprite]} 
