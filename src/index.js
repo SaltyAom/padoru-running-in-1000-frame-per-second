@@ -76,6 +76,8 @@ class Root extends Component {
             outsideY: 0
         })
 
+        document.getElementById("audio").currentTime = 0
+
         setTimeout(() => {
             let outsideYInterval = setInterval(() => {
                 this.setState({
@@ -144,6 +146,10 @@ class Root extends Component {
         },8000)
     }
 
+    playAudio(){
+        document.getElementById('audio').play();
+    }
+
     goRight(){
         let right = setInterval(() => {
             this.setState({
@@ -204,11 +210,16 @@ class Root extends Component {
         if(this.state.load){
             return(
                 <Fragment>
-                    <div id="outside" style={{opacity: this.state.outside, backgroundPositionY: `${this.state.outsideY}vh`}}></div>
-                    <div id="hall"></div>
+                    <div 
+                        id="outside" 
+                        style={{opacity: this.state.outside, backgroundPositionY: `${this.state.outsideY}vh`}}
+                        onClick={() => this.playAudio()}
+                    ></div>
+                    <div id="hall" onClick={() => this.playAudio()}></div>
                     <img 
                         id="frame" src={frame[this.state.sprite]} 
                         alt="Padoru" 
+                        onClick={() => this.playAudio()}
                         style={{
                             top: `${this.state.top}${this.state.unit}`,
                             left: `${this.state.left}%`

@@ -18,7 +18,7 @@
     <!-- Open Graph -->
     <meta name="og:title" content="Padoru running in 1,000 frames per second">
     <meta name="og:description" content="Merry Christmas">
-    <meta property="og:image" content="https://www.github.com/aomkirby123/padoru/public/frame/padoru0.png">
+    <meta property="og:image" content="https://raw.githubusercontent.com/aomkirby123/padoru-running-in-1000-frame-per-second/master/public/frame/padoru0.png">
     <meta property="og:image:width" content="498">  
     <meta property="og:image:height" content="498">
     <meta property="og:locale" content="en_US">
@@ -29,12 +29,13 @@
     <meta name="twitter:title" content="Padoru running in 1,000 frames per second">
     <meta name="twitter:description" content="Merry Christmas">
     <meta name="twitter:site" content="@aomkirby1231">
-    <meta name="twitter:image" content="https://www.github.com/aomkirby123/padoru/public/frame/padoru0.png">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/aomkirby123/padoru-running-in-1000-frame-per-second/master/public/frame/padoru0.png">
     <meta name="twitter:creator" content="@aomkirby1231">
   </head>
   <body>
     <noscript>Padoru need JavaScript to be running in 1,000 frames per second.</noscript>
-    <div id="root"></div>
+    <div id="root" onClick="document.getElementById('audio').play();"></div>
+    <div id="message">If audio doesn't play, please tap on screen.</div>
     <audio id="audio" src="media/MerryChristmas.mp3" type="audio/mpeg" loop></audio>
   </body>
 </html>
